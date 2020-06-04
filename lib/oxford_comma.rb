@@ -3,7 +3,7 @@ def oxford_comma(array)
     return array.join(" and ")
   elsif array.size > 2
     array.insert(-2, "and ")
-    array[0..-1].join(", ")
+    array[0..-2].join(", ")
   else
     array.join
   end
